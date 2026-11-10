@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 29
+names: ['Aloo Kadai', 'Aloo Methi', 'Dal Makhani', 'Dal Roti', 'Gajar ka halwa', 'Moong Dal Poori', 'Naan', 'Naan - Garlic', 'Palak Paneer', 'Poori', 'Sheer Khurma', 'Tikki', 'chutney', 'curd', 'dal', 'dosa', 'idly', 'kachori', 'kheer', 'papad', 'pickle', 'raita', 'rice', 'roti', 'sambar-rasam', 'sweet', 'vada', 'veg', 'veg-fry']
+
+roboflow:
+  workspace: raghnyav
+  project: aaroha-food-detection-hqlag
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/raghnyav/aaroha-food-detection-hqlag/dataset/1

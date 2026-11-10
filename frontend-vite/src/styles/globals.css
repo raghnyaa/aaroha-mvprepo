@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+  
+  /* Aaroha Theme - Minimal Geometric Fall Palette */
+  --background: #FAF8F5; /* Soft warm beige */
+  --foreground: #2B2B2B; /* Charcoal */
+  
+  --card: rgba(255, 255, 255, 0.6); /* Glassy white */
+  --card-foreground: #2B2B2B;
+  
+  --popover: rgba(255, 255, 255, 0.95);
+  --popover-foreground: #2B2B2B;
+  
+  --primary: #C97456; /* Terracotta */
+  --primary-foreground: #FFFFFF;
+  
+  --secondary: #A4B494; /* Sage green */
+  --secondary-foreground: #2B2B2B;
+  
+  --muted: #E8E4DF; /* Warm gray beige */
+  --muted-foreground: #6B6B6B; /* Medium gray */
+  
+  --accent: #E6A962; /* Warm amber */
+  --accent-foreground: #2B2B2B;
+  
+  --destructive: #D16B6B;
+  --destructive-foreground: #FFFFFF;
+  
+  --border: rgba(43, 43, 43, 0.08); /* Subtle neutral border */
+  --input: transparent;
+  --input-background: rgba(255, 255, 255, 0.5);
+  --switch-background: #D4D0CA;
+  
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  
+  --ring: #C97456;
+  
+  /* Aaroha color palette for data visualization */
+  --chart-1: #C97456; /* Terracotta */
+  --chart-2: #E6A962; /* Amber */
+  --chart-3: #A4B494; /* Sage */
+  --chart-4: #8B9D84; /* Deeper sage */
+  --chart-5: #B89078; /* Clay */
+  
+  /* Additional minimal palette */
+  --sage: #A4B494;
+  --sage-dark: #8B9D84;
+  --clay: #B89078;
+  --sand: #E8E4DF;
+  --charcoal: #2B2B2B;
+  --charcoal-light: #4A4A4A;
+  
+  /* Gradient variables */
+  --gradient-warm: linear-gradient(135deg, #E6A962 0%, #C97456 100%);
+  --gradient-sage: linear-gradient(135deg, #A4B494 0%, #8B9D84 100%);
+  --gradient-soft: linear-gradient(180deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.4) 100%);
+  
+  --radius: 1.25rem; /* Smooth geometric radius */
+  
+  --sidebar: rgba(255, 255, 255, 0.6);
+  --sidebar-foreground: #2B2B2B;
+  --sidebar-primary: #C97456;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #E8E4DF;
+  --sidebar-accent-foreground: #2B2B2B;
+  --sidebar-border: rgba(43, 43, 43, 0.06);
+  --sidebar-ring: #C97456;
+}
+
+.dark {
+  /* Dark mode - Minimal geometric with warm fall tones */
+  --background: #1A1A1A; /* Deep charcoal */
+  --foreground: #E8E4DF;
+  
+  --card: rgba(42, 42, 42, 0.6); /* Glassy dark card */
+  --card-foreground: #E8E4DF;
+  
+  --popover: rgba(42, 42, 42, 0.95);
+  --popover-foreground: #E8E4DF;
+  
+  --primary: #D98B6E; /* Lighter terracotta */
+  --primary-foreground: #1A1A1A;
+  
+  --secondary: #B5C4A8; /* Lighter sage */
+  --secondary-foreground: #1A1A1A;
+  
+  --muted: #2B2B2B;
+  --muted-foreground: #9B9B9B;
+  
+  --accent: #F0BC7A; /* Lighter amber */
+  --accent-foreground: #1A1A1A;
+  
+  --destructive: #E08080;
+  --destructive-foreground: #1A1A1A;
+  
+  --border: rgba(232, 228, 223, 0.12);
+  --input: rgba(232, 228, 223, 0.08);
+  --ring: #D98B6E;
+  
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  
+  --chart-1: #D98B6E;
+  --chart-2: #F0BC7A;
+  --chart-3: #B5C4A8;
+  --chart-4: #9FB392;
+  --chart-5: #C9A591;
+  
+  --gradient-warm: linear-gradient(135deg, #F0BC7A 0%, #D98B6E 100%);
+  --gradient-sage: linear-gradient(135deg, #B5C4A8 0%, #9FB392 100%);
+  --gradient-soft: linear-gradient(180deg, rgba(42,42,42,0.8) 0%, rgba(42,42,42,0.4) 100%);
+  
+  --sidebar: rgba(42, 42, 42, 0.6);
+  --sidebar-foreground: #E8E4DF;
+  --sidebar-primary: #D98B6E;
+  --sidebar-primary-foreground: #1A1A1A;
+  --sidebar-accent: #2B2B2B;
+  --sidebar-accent-foreground: #E8E4DF;
+  --sidebar-border: rgba(232, 228, 223, 0.1);
+  --sidebar-ring: #D98B6E;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  
+  /* Aaroha additional colors */
+  --color-sage: var(--sage);
+  --color-sage-dark: var(--sage-dark);
+  --color-clay: var(--clay);
+  --color-sand: var(--sand);
+  --color-charcoal: var(--charcoal);
+  --color-charcoal-light: var(--charcoal-light);
+  
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* Glassy card effect */
+  .glass-card {
+    background: var(--card);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--border);
+  }
+  
+  /* Gradient backgrounds */
+  .gradient-warm {
+    background: var(--gradient-warm);
+  }
+  
+  .gradient-sage {
+    background: var(--gradient-sage);
+  }
+  
+  .gradient-soft {
+    background: var(--gradient-soft);
+  }
+}
+
+/**
+ * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
+ */
+@layer base {
+  :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
+    h1 {
+      font-size: var(--text-2xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h2 {
+      font-size: var(--text-xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h3 {
+      font-size: var(--text-lg);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h4 {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    p {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+
+    label {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    button {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    input {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+  }
+}
+
+html {
+  font-size: var(--font-size);
+}

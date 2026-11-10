@@ -1,0 +1,22 @@
+[
+  {
+    "userId": "f83dc1b7-3157-488f-846d-0f8e47742264",
+    "handle": "user0",
+    "displayName": "user0",
+    "avatarUrl": null,
+    "bio": "Hey, I'm new here 🌱",
+    "dietaryGoal": "mindful eating",
+    "allergies": [],
+    "theme": {
+      "darkMode": false,
+      "accentColor": "#C86852"
+    },
+    "privacy": {
+      "visibility": "private",
+      "showLocation": false,
+      "showMood": true
+    },
+    "createdAt": "2025-10-25T17:43:12.182Z",
+    "updatedAt": "2025-10-25T17:43:12.182Z"
+  }
+]

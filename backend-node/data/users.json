@@ -1,0 +1,37 @@
+[
+  {
+    "id": "f83dc1b7-3157-488f-846d-0f8e47742264",
+    "email": "ragh@test.com",
+    "passwordHash": "$2a$10$rPRdYR6YGC3QBAzOJnFTk.EJmgaLIRYglss.H/iFH/9l6nrixZKmS",
+    "handle": "user0",
+    "createdAt": "2025-10-25T17:41:31.051Z"
+  },
+  {
+    "id": "19ebf375-a46f-4cce-a148-644633f2f4ec",
+    "email": "raghnya@test.com",
+    "passwordHash": "$2a$10$RIEyXsYvE2JsBZLIdFIyKOgdwsfYwlXlOvIQBBMnzsMox3iJt2VIG",
+    "handle": "user1",
+    "createdAt": "2025-10-26T18:38:39.636Z"
+  },
+  {
+    "id": "a5edd29d-64af-4312-9155-c5adf9012be4",
+    "email": "raghnya@test2.com",
+    "passwordHash": "$2a$10$AG9Rjxry8H5fMGUwOlTsj.DuQWoQ3DYzBwU.S51CkzR5CTOV9B4hS",
+    "handle": "user2",
+    "createdAt": "2025-11-04T01:50:39.019Z"
+  },
+  {
+    "id": "044ff01e-5d58-4c13-842a-2448644c999a",
+    "email": "ragh@test2.com",
+    "passwordHash": "$2a$10$ExXddRa.pvH5vjUEXBQFo.p..iOvLPb.Eyl2r5EgoF7hk9vLfLZXW",
+    "handle": "user3",
+    "createdAt": "2025-11-04T01:57:59.767Z"
+  },
+  {
+    "id": "30f45197-6cac-4645-956e-11ddf40a4f5a",
+    "email": "ragh@test1.com",
+    "passwordHash": "$2a$10$MwQvk0WX.05t3Y6Cz6uxveQ22H8Fu5kjYbpU32xrb1qL9vaIuKSe2",
+    "handle": "user4",
+    "createdAt": "2025-11-04T02:11:21.982Z"
+  }
+]

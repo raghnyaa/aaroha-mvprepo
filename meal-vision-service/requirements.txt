@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+ultralytics
+torch
+Pillow
+python-multipart
+openai>=1.0.0
+python-dotenv
